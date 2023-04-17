@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tv_shape"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/send_text_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/send"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_person"
+        android:hint="@string/your_name"
+        app:layout_constraintTop_toBottomOf="@id/send_text_btn" />
+
+    <EditText
+        android:id="@+id/et_age"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_calendar"
+        android:hint="@string/years_old"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <EditText
+        android:id="@+id/et_sex"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_wc"
+        android:hint="@string/male_female"
+        app:layout_constraintTop_toBottomOf="@id/et_age" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

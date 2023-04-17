@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">First Lesson</string>
+    <string name="your_name">Your name</string>
+    <string name="send">Send</string>
+    <string name="years_old">Years old</string>
+    <string name="male_female">Male / Female</string>
+</resources>
